@@ -1,7 +1,10 @@
 #!usr/bin/env python
-from config import get
+from mconfig import get, load
 
+print("\n"*4)
 print("Start")
+
+load("conf.yml")
 print("\n<a.b>: ", get("a.b."))
 print("\n<a.b.c>: ", get("a.b.c"))
 print("\n<a.b.d>: ", get("a.b.d"))
