@@ -5,3 +5,5 @@
 *.yml
 .idea/
 .vscode/
+dist/
+__pycache__
