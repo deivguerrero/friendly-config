@@ -1,13 +1,28 @@
 from distutils.core import setup
+LATEST = '0.0.4'
+
 setup(
-  name = 'mypackage',
-  packages = ['mypackage'], # this must be the same as the name above
-  version = '0.1',
-  description = 'my description',
-  author = 'Alejandro Esquiva',
-  author_email = 'alejandro@geekytheory.com',
+  name='friendly-config',
+  version=LATEST,
+  description='Simple wrapper for yaml files',
   url='https://github.com/deivguerrero/friendly-config.git',
-  download_url='https://github.com/deivguerrero/friendly-config/tarball/0.0.1',
-  keywords = ['testing', 'logging', 'example'],
-  classifiers = [],
+  author='David Guerrero Morales',
+  author_email='deivguerrero@gmail.com',
+  license='MIT',
+  packages=[
+    'mconfig',
+    ],
+  zip_safe=False,
+  install_requires=[
+    'PyYAML==3.12',
+    ],
+  download_url='https://github.com/deivguerrero/friendly-config/tarball/{}'.format(LATEST),
+  keywords='configuration config yaml yml',
+  classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3.6',
+    'Topic :: Utilities',
+  ],
 )
