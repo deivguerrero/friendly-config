@@ -14,7 +14,7 @@ setup(
     ],
   zip_safe=False,
   install_requires=[
-    'PyYAML==3.12',
+    'PyYAML==5.1',
     ],
   download_url='https://github.com/deivguerrero/friendly-config/tarball/{}'.format(LATEST),
   keywords='configuration config yaml yml',
